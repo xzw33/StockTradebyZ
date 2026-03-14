@@ -47,15 +47,16 @@
 
 ---
 
-## 3. 环境准备
+## 3. 快速开始（一键跑通）
 
-### 3.1 Python 版本
+### 3.1 Clone 项目
 
-建议 Python 3.10 到 3.12。
+~~~bash
+git clone https://github.com/SebastienZh/StockTradebyZ
+cd StockTradebyZ
+~~~
 
 ### 3.2 安装依赖
-
-在项目根目录执行：
 
 ~~~bash
 pip install -r requirements.txt
@@ -72,24 +73,7 @@ Windows PowerShell（永久写入）：
 
 写入后请重开终端，环境变量才会在新会话中生效。
 
----
-
-## 4. 快速开始（一键跑通）
-
-### 4.1 Clone 项目
-
-~~~bash
-git clone https://github.com/SebastienZh/StockTradebyZ
-cd StockTradebyZ
-~~~
-
-### 4.2 安装依赖
-
-~~~bash
-pip install -r requirements.txt
-~~~
-
-### 4.3 运行一键脚本
+### 3.4 运行一键脚本
 
 在项目根目录执行：
 
@@ -111,7 +95,7 @@ python run_all.py --start-from 3
 
 ---
 
-## 5. 分步运行攻略
+## 4. 分步运行攻略
 
 ### 步骤 1：拉取 K 线
 
@@ -171,7 +155,7 @@ python agent/gemini_review.py --config config/gemini_review.yaml
 
 ---
 
-## 6. 关键配置建议
+## 5. 关键配置建议
 
 ### 6.1 抓取层
 
@@ -195,7 +179,7 @@ python agent/gemini_review.py --config config/gemini_review.yaml
 
 ---
 
-## 7. 输出结果解读
+## 6. 输出结果解读
 
 ### 候选文件
 
@@ -214,7 +198,7 @@ data/review/日期/suggestion.json
 
 ---
 
-## 8. 常见问题
+## 7. 常见问题
 
 ### Q1：fetch_kline 报 token 错误
 
